@@ -67,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0jR-Ru-IrD">
-                                <rect key="frame" x="40" y="88.5" width="567" height="266.5"/>
+                                <rect key="frame" x="60" y="88.5" width="547" height="266.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="P2p-ho-P7M">
                                     <size key="itemSize" width="80" height="80"/>
@@ -160,7 +160,7 @@
                             <constraint firstItem="OfM-fS-roV" firstAttribute="centerY" secondItem="bYq-fF-RPI" secondAttribute="centerY" id="5bE-4F-2pL"/>
                             <constraint firstItem="mw3-xm-fN6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="6DJ-oK-B67"/>
                             <constraint firstItem="0jR-Ru-IrD" firstAttribute="top" secondItem="PPK-H0-NFS" secondAttribute="bottom" id="8Ai-Z3-xC0"/>
-                            <constraint firstItem="0jR-Ru-IrD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="A7P-bJ-RJp"/>
+                            <constraint firstItem="0jR-Ru-IrD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="A7P-bJ-RJp"/>
                             <constraint firstItem="F2z-1U-7ru" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AMy-pX-Nh7"/>
                             <constraint firstItem="PPK-H0-NFS" firstAttribute="top" secondItem="bYq-fF-RPI" secondAttribute="bottom" id="CqQ-RM-QiO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F2z-1U-7ru" secondAttribute="bottom" id="EX6-kd-RCz"/>
@@ -240,7 +240,6 @@
         <!--Navigation Controller-->
         <scene sceneID="juY-Eb-wS2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j9Z-Kw-wEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="AC5-l6-RKr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -253,6 +252,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="i7p-vh-ptT"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j9Z-Kw-wEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-512" y="406"/>
         </scene>
@@ -314,13 +314,13 @@
         <!--Device Connection-->
         <scene sceneID="AVz-2a-hFb">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="R2X-yk-IUJ" customClass="ConnectionViewController" customModule="ControllerSDKSample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="R2X-yk-IUJ" customClass="ConnectionViewController" customModule="MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cgc-wh-Vqr">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="deviceViewCell" id="7fU-50-TI5" customClass="DeviceTableViewCell" customModule="ControllerSDKSample" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="deviceViewCell" id="7fU-50-TI5" customClass="DeviceTableViewCell" customModule="MemoryGame" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="667" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7fU-50-TI5" id="bvH-mk-f1u">
