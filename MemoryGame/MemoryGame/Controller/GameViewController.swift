@@ -99,7 +99,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath as IndexPath) as! CardCVC
-    cell.showCard(show: false, animted: false)
+    cell.showCard(show: false, temp: false, animated: false)
     
     guard let card = gameController.cardAtIndex(index: indexPath.item) else { return cell }
     cell.card = card
@@ -142,11 +142,19 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(gameTimerAction), userInfo: nil, repeats: true)
   }
   
+  func memoryGame(game: MemoryGame, showTempCards cards: [Card]) {
+    for card in cards {
+      guard let index = gameController.indexForCard(card: card) else { continue }
+      let cell = collectionView.cellForItem(at: NSIndexPath(item: index, section:0) as IndexPath) as! CardCVC
+      cell.showCard(show: true, temp: true, animated: true)
+    }
+  }
+  
   func memoryGame(game: MemoryGame, showCards cards: [Card]) {
     for card in cards {
       guard let index = gameController.indexForCard(card: card) else { continue }
       let cell = collectionView.cellForItem(at: NSIndexPath(item: index, section:0) as IndexPath) as! CardCVC
-      cell.showCard(show: true, animted: true)
+      cell.showCard(show: true, temp: false, animated: true)
     }
   }
   
@@ -154,7 +162,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     for card in cards {
       guard let index = gameController.indexForCard(card: card) else { continue }
       let cell = collectionView.cellForItem(at: NSIndexPath(item: index, section:0) as IndexPath) as! CardCVC
-      cell.showCard(show: false, animted: true)
+      cell.showCard(show: false, temp: false, animated: true)
     }
   }
   

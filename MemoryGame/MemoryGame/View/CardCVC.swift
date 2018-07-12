@@ -14,6 +14,7 @@ class CardCVC: UICollectionViewCell {
   
   @IBOutlet weak var frontImageView: UIImageView!
   @IBOutlet weak var backImageView: UIImageView!
+  @IBOutlet weak var tempImageView: UIImageView!
   
   var card:Card? {
     didSet {
@@ -26,21 +27,34 @@ class CardCVC: UICollectionViewCell {
   
   // MARK: - Methods
   
-  func showCard(show: Bool, animted: Bool) {
+  func showCard(show: Bool, temp: Bool, animated: Bool) {
     frontImageView.isHidden = false
     backImageView.isHidden = false
+    tempImageView.isHidden = false
     shown = show
     
-    if animted {
+    if animated {
       if show {
-        UIView.transition(from: backImageView,
-                          to: frontImageView,
-                          duration: 0.5,
-                          options: [.transitionFlipFromRight, .showHideTransitionViews],
-                          completion: { (finished: Bool) -> () in
-        })
+        if (temp) {
+          frontImageView.isHidden = true
+          UIView.transition(from: backImageView,
+                            to: tempImageView,
+                            duration: 0.5,
+                            options: [.transitionFlipFromRight, .showHideTransitionViews],
+                            completion: { (finished: Bool) -> () in
+          })
+        } else {
+          tempImageView.isHidden = true
+          UIView.transition(from: backImageView,
+                            to: frontImageView,
+                            duration: 0.5,
+                            options: [.transitionFlipFromRight, .showHideTransitionViews],
+                            completion: { (finished: Bool) -> () in
+          })
+        }
       } else {
-        UIView.transition(from: frontImageView,
+        frontImageView.isHidden = true
+        UIView.transition(from: tempImageView,
                           to: backImageView,
                           duration: 0.5,
                           options: [.transitionFlipFromRight, .showHideTransitionViews],
@@ -49,14 +63,20 @@ class CardCVC: UICollectionViewCell {
       }
     } else {
       if show {
-        bringSubview(toFront: frontImageView)
-        backImageView.isHidden = true
+        if temp {
+          bringSubview(toFront: tempImageView)
+          backImageView.isHidden = true
+          frontImageView.isHidden = true
+        } else {
+          bringSubview(toFront: frontImageView)
+          backImageView.isHidden = true
+          tempImageView.isHidden = true
+        }
       } else {
         bringSubview(toFront: backImageView)
         frontImageView.isHidden = true
+        tempImageView.isHidden = true
       }
     }
   }
-  
-  
 }
