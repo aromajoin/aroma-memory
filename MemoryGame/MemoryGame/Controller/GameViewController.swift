@@ -13,6 +13,8 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
   
   // MARK: Properties
   
+  let AROMA_DIFFUSE_DURATION = 2000
+  
   @IBOutlet weak var collectionView: UICollectionView!
   @IBOutlet weak var timerLabel: UILabel!
   @IBOutlet weak var playButton: UIButton!
@@ -112,6 +114,11 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     if cell.shown { return }
     gameController.didSelectCard(card: cell.card)
+    
+    let cartridgeNumber = cell.card?.aromaNumber
+    if cartridgeNumber != nil{
+      asController.diffuseAll(duration: AROMA_DIFFUSE_DURATION, booster: true, ports: [cartridgeNumber!])
+    }
     
     collectionView.deselectItem(at: indexPath as IndexPath, animated:true)
   }

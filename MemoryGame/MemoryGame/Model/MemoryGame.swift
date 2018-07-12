@@ -130,11 +130,10 @@ class MemoryGame {
   private func randomCards(cardsData:[UIImage]) -> [Card] {
     var cards = [Card]()
     for i in 0...cardsData.count-1 {
-      let card = Card.init(image: cardsData[i])
+      let card = Card(image: cardsData[i], aromaNumber: i + 1)
       cards.append(contentsOf: [card, Card.init(card: card)])
     }
     cards.shuffle()
     return cards
   }
-  
 }
