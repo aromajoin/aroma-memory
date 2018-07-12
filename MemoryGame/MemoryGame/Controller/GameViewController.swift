@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AromaShooterControllerSwift
 
 class GameViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, MemoryGameDelegate {
   
@@ -15,9 +16,12 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
   @IBOutlet weak var collectionView: UICollectionView!
   @IBOutlet weak var timerLabel: UILabel!
   @IBOutlet weak var playButton: UIButton!
+  @IBOutlet weak var connectButton: UIButton!
   
   let gameController = MemoryGame()
   var timer:Timer?
+  
+  let asController = AromaShooterController.sharedInstance
   
   // MARK: - Lifecycle
   
@@ -26,6 +30,14 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     gameController.delegate = self
     resetGame()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    if asController.connectedDevices.count == 0 {
+      connectButton.setTitle("No connection", for: .normal)
+    } else {
+      connectButton.setTitle("Connected(\(asController.connectedDevices.count))", for: .normal)
+    }
   }
   
   override func viewDidDisappear(_ animated: Bool) {

@@ -20,7 +20,25 @@
 		31A7CBC01CC2ECFC0047F3CF /* ScoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A7CBBF1CC2ECFC0047F3CF /* ScoresTableViewController.swift */; };
 		31A7CBC21CC2F7910047F3CF /* Highscores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A7CBC11CC2F7910047F3CF /* Highscores.swift */; };
 		31E1EF5E1CC2E125009F4180 /* Array+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1EF5D1CC2E125009F4180 /* Array+Shuffle.swift */; };
+		CEA7A3A120F725C6009FC715 /* AromaShooterControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7A3A020F725C6009FC715 /* AromaShooterControllerSwift.framework */; };
+		CEA7A3A220F725CE009FC715 /* AromaShooterControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7A3A020F725C6009FC715 /* AromaShooterControllerSwift.framework */; };
+		CEA7A3A320F725CE009FC715 /* AromaShooterControllerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7A3A020F725C6009FC715 /* AromaShooterControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEA7A3A620F7270B009FC715 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7A3A520F7270B009FC715 /* ConnectionViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEA7A3A420F725CE009FC715 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEA7A3A320F725CE009FC715 /* AromaShooterControllerSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		31623E3D1CA5E40400695940 /* MemoryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +56,8 @@
 		31A7CBBF1CC2ECFC0047F3CF /* ScoresTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoresTableViewController.swift; sourceTree = "<group>"; };
 		31A7CBC11CC2F7910047F3CF /* Highscores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Highscores.swift; sourceTree = "<group>"; };
 		31E1EF5D1CC2E125009F4180 /* Array+Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffle.swift"; sourceTree = "<group>"; };
+		CEA7A3A020F725C6009FC715 /* AromaShooterControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AromaShooterControllerSwift.framework; sourceTree = "<group>"; };
+		CEA7A3A520F7270B009FC715 /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA7A3A220F725CE009FC715 /* AromaShooterControllerSwift.framework in Frameworks */,
+				CEA7A3A120F725C6009FC715 /* AromaShooterControllerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +76,7 @@
 		31623E341CA5E40400695940 = {
 			isa = PBXGroup;
 			children = (
+				CEA7A3A020F725C6009FC715 /* AromaShooterControllerSwift.framework */,
 				31623E3F1CA5E40400695940 /* MemoryGame */,
 				31623E3E1CA5E40400695940 /* Products */,
 			);
@@ -89,6 +112,7 @@
 				31623E551CA5F09D00695940 /* GameViewController.swift */,
 				31A7CBBF1CC2ECFC0047F3CF /* ScoresTableViewController.swift */,
 				3186EB181CC305A100748ADC /* CustomizeCardsTableViewController.swift */,
+				CEA7A3A520F7270B009FC715 /* ConnectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -130,6 +154,7 @@
 				31623E391CA5E40400695940 /* Sources */,
 				31623E3A1CA5E40400695940 /* Frameworks */,
 				31623E3B1CA5E40400695940 /* Resources */,
+				CEA7A3A420F725CE009FC715 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,7 +173,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "Daniel Tsirulnikov";
+				ORGANIZATIONNAME = Aromajoin;
 				TargetAttributes = {
 					31623E3C1CA5E40400695940 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -193,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31623E5C1CA5F09D00695940 /* GameViewController.swift in Sources */,
+				CEA7A3A620F7270B009FC715 /* ConnectionViewController.swift in Sources */,
 				31E1EF5E1CC2E125009F4180 /* Array+Shuffle.swift in Sources */,
 				318D537D1CC310E000FEA3ED /* UIImage+Downloader.swift in Sources */,
 				31A7CBC21CC2F7910047F3CF /* Highscores.swift in Sources */,
