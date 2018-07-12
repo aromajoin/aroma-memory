@@ -109,7 +109,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     //let numberOfColumns:Int = self.collectionView(collectionView, numberOfItemsInSection: indexPath.section)
     
-    let itemWidth: CGFloat = collectionView.frame.width / 3.0 - 15.0 //numberOfColumns as CGFloat - 10 //- (minimumInteritemSpacing * numberOfColumns))
+    let itemWidth: CGFloat = collectionView.frame.width / 4.0 - 25.0 //numberOfColumns as CGFloat - 10 //- (minimumInteritemSpacing * numberOfColumns))
     
     return CGSize(width: itemWidth, height: itemWidth)
   }
