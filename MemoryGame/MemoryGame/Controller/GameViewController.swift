@@ -67,10 +67,10 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
   @IBAction func didPressPlayButton(_ sender: UIButton) {
     if gameController.isPlaying {
       resetGame()
-      playButton.setTitle(NSLocalizedString("Play", comment: "play"), for: .normal)
+      playButton.setTitle(NSLocalizedString("PLAY", comment: "play"), for: .normal)
     } else {
       setupNewGame()
-      playButton.setTitle(NSLocalizedString("Stop", comment: "stop"), for: .normal)
+      playButton.setTitle(NSLocalizedString("STOP", comment: "stop"), for: .normal)
     }
   }
   
@@ -170,12 +170,24 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
   func memoryGameDidEnd(game: MemoryGame, elapsedTime: TimeInterval) {
     timer?.invalidate()
     
+    let titleAttributed = NSMutableAttributedString(
+      string: "Congrats",
+      attributes: [NSAttributedStringKey.font:UIFont(name:"chalkduster",size: 22)]
+    )
+    
+    let messageAttributed = NSMutableAttributedString(
+      string: String(format: "%@ %.0f seconds", NSLocalizedString("You finished the game in", comment: "message"), elapsedTime),
+      attributes: [NSAttributedStringKey.font:UIFont(name:"chalkduster",size: 17)]
+    )
+    
     let elapsedTime = gameController.elapsedTime
     
     let alertController = UIAlertController(
-      title: NSLocalizedString("Hurrah!", comment: "title"),
-      message: String(format: "%@ %.0f seconds", NSLocalizedString("You finished the game in", comment: "message"), elapsedTime),
+      title: "",
+      message: "",
       preferredStyle: .alert)
+    alertController.setValue(titleAttributed, forKey: "attributedTitle")
+    alertController.setValue(messageAttributed, forKey: "attributedMessage")
     
     let saveScoreAction = UIAlertAction(title: NSLocalizedString("Save Score", comment: "save score"), style: .default) { [weak self] (_) in
       let nameTextField = alertController.textFields![0] as UITextField

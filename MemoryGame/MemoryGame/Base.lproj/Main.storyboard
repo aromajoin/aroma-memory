@@ -22,24 +22,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shapes-Black-Wallpaper-iPhone-6-Plus" translatesAutoresizingMaskIntoConstraints="NO" id="F2z-1U-7ru" userLabel="background">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_1" translatesAutoresizingMaskIntoConstraints="NO" id="F2z-1U-7ru" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AROMA MEMORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYq-fF-RPI" userLabel="title">
-                                <rect key="frame" x="242.5" y="10" width="182.5" height="50"/>
+                                <rect key="frame" x="225" y="10" width="218.5" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Ije-6H-dh8"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ije-6H-dh8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mw3-xm-fN6" userLabel="play">
-                                <rect key="frame" x="22" y="60" width="49" height="30"/>
+                                <rect key="frame" x="22" y="49" width="65" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6TZ-mH-6qn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <state key="normal" title="PLAY">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -48,11 +48,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqY-mx-Gmh" userLabel="score">
-                                <rect key="frame" x="545" y="51.5" width="44" height="46"/>
+                                <rect key="frame" x="580" y="41.5" width="77" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="LIq-Lc-Blh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <state key="normal" title="Scores">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -60,14 +60,14 @@
                                     <segue destination="bLw-3p-fGG" kind="push" id="LpZ-8U-OKo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME: ---" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPK-H0-NFS" userLabel="time">
-                                <rect key="frame" x="296" y="60" width="75.5" height="28.5"/>
-                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: ---" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPK-H0-NFS" userLabel="time">
+                                <rect key="frame" x="274.5" y="50" width="119.5" height="28"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0jR-Ru-IrD">
-                                <rect key="frame" x="60" y="88.5" width="547" height="266.5"/>
+                                <rect key="frame" x="60" y="78" width="547" height="277"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="P2p-ho-P7M">
                                     <size key="itemSize" width="80" height="80"/>
@@ -132,9 +132,9 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="tCM-Z7-oIM"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8H-ER-cem" userLabel="play">
-                                <rect key="frame" x="608" y="55" width="39" height="39"/>
-                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="22"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8H-ER-cem" userLabel="play">
+                                <rect key="frame" x="592" y="42.5" width="55" height="44"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
                                 <state key="normal" title="Cards">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -143,8 +143,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfM-fS-roV">
-                                <rect key="frame" x="550" y="20.5" width="95" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="540" y="15" width="117" height="30"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
                                 <state key="normal" title="No connection">
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -169,12 +169,11 @@
                             <constraint firstItem="mw3-xm-fN6" firstAttribute="centerY" secondItem="PPK-H0-NFS" secondAttribute="centerY" id="NiH-ip-L0I"/>
                             <constraint firstItem="PPK-H0-NFS" firstAttribute="centerX" secondItem="bYq-fF-RPI" secondAttribute="centerX" id="XKT-Ca-YFl"/>
                             <constraint firstAttribute="trailing" secondItem="c8H-ER-cem" secondAttribute="trailing" constant="20" id="Yrz-bk-f46"/>
-                            <constraint firstAttribute="trailing" secondItem="OfM-fS-roV" secondAttribute="trailing" constant="22" id="YzR-rK-rrK"/>
+                            <constraint firstAttribute="trailing" secondItem="OfM-fS-roV" secondAttribute="trailing" constant="10" id="YzR-rK-rrK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0jR-Ru-IrD" secondAttribute="bottom" constant="20" id="Z7h-fM-sLT"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mw3-xm-fN6" secondAttribute="trailing" constant="20" symbolic="YES" id="bJZ-31-mBo"/>
-                            <constraint firstItem="AqY-mx-Gmh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="fLZ-ug-1iP"/>
                             <constraint firstAttribute="trailing" secondItem="F2z-1U-7ru" secondAttribute="trailing" id="gIl-mX-251"/>
-                            <constraint firstItem="c8H-ER-cem" firstAttribute="leading" secondItem="AqY-mx-Gmh" secondAttribute="trailing" constant="19" id="ulU-sr-AMf"/>
+                            <constraint firstAttribute="trailing" secondItem="AqY-mx-Gmh" secondAttribute="trailing" constant="10" id="mMq-UL-202"/>
                             <constraint firstItem="F2z-1U-7ru" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x7N-Xa-c8R"/>
                             <constraint firstItem="AqY-mx-Gmh" firstAttribute="centerY" secondItem="c8H-ER-cem" secondAttribute="centerY" id="ySk-RW-isG"/>
                         </constraints>
@@ -375,8 +374,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1_11-128" width="63" height="64"/>
-        <image name="Shapes-Black-Wallpaper-iPhone-6-Plus" width="1242" height="2208"/>
+        <image name="1_11-128" width="126" height="128"/>
+        <image name="bg_1" width="2282" height="2033"/>
         <image name="brand1" width="85" height="85"/>
         <image name="hexagon_green" width="300" height="334"/>
         <image name="ic_hexagon" width="28" height="30"/>

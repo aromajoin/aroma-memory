@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		31623E411CA5E40400695940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31623E401CA5E40400695940 /* AppDelegate.swift */; };
 		31623E461CA5E40400695940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31623E441CA5E40400695940 /* Main.storyboard */; };
-		31623E481CA5E40400695940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31623E471CA5E40400695940 /* Assets.xcassets */; };
 		31623E4B1CA5E40400695940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31623E491CA5E40400695940 /* LaunchScreen.storyboard */; };
 		31623E5C1CA5F09D00695940 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31623E551CA5F09D00695940 /* GameViewController.swift */; };
 		31623E5D1CA5F09D00695940 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31623E571CA5F09D00695940 /* Card.swift */; };
@@ -20,6 +19,7 @@
 		31A7CBC01CC2ECFC0047F3CF /* ScoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A7CBBF1CC2ECFC0047F3CF /* ScoresTableViewController.swift */; };
 		31A7CBC21CC2F7910047F3CF /* Highscores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A7CBC11CC2F7910047F3CF /* Highscores.swift */; };
 		31E1EF5E1CC2E125009F4180 /* Array+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1EF5D1CC2E125009F4180 /* Array+Shuffle.swift */; };
+		CE37303220FDCFD600DE362E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE37303120FDCFD600DE362E /* Assets.xcassets */; };
 		CEA7A3A120F725C6009FC715 /* AromaShooterControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7A3A020F725C6009FC715 /* AromaShooterControllerSwift.framework */; };
 		CEA7A3A220F725CE009FC715 /* AromaShooterControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7A3A020F725C6009FC715 /* AromaShooterControllerSwift.framework */; };
 		CEA7A3A320F725CE009FC715 /* AromaShooterControllerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7A3A020F725C6009FC715 /* AromaShooterControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -44,7 +44,6 @@
 		31623E3D1CA5E40400695940 /* MemoryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31623E401CA5E40400695940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31623E451CA5E40400695940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		31623E471CA5E40400695940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31623E4A1CA5E40400695940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31623E4C1CA5E40400695940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31623E551CA5F09D00695940 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		31A7CBBF1CC2ECFC0047F3CF /* ScoresTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoresTableViewController.swift; sourceTree = "<group>"; };
 		31A7CBC11CC2F7910047F3CF /* Highscores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Highscores.swift; sourceTree = "<group>"; };
 		31E1EF5D1CC2E125009F4180 /* Array+Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffle.swift"; sourceTree = "<group>"; };
+		CE37303120FDCFD600DE362E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA7A3A020F725C6009FC715 /* AromaShooterControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AromaShooterControllerSwift.framework; sourceTree = "<group>"; };
 		CEA7A3A520F7270B009FC715 /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +99,7 @@
 				31623E591CA5F09D00695940 /* View */,
 				31623E541CA5F09D00695940 /* Controller */,
 				31E1EF5C1CC2E125009F4180 /* Extensions */,
-				31623E471CA5E40400695940 /* Assets.xcassets */,
+				CE37303120FDCFD600DE362E /* Assets.xcassets */,
 				31623E491CA5E40400695940 /* LaunchScreen.storyboard */,
 				31623E4C1CA5E40400695940 /* Info.plist */,
 			);
@@ -205,7 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31623E4B1CA5E40400695940 /* LaunchScreen.storyboard in Resources */,
-				31623E481CA5E40400695940 /* Assets.xcassets in Resources */,
+				CE37303220FDCFD600DE362E /* Assets.xcassets in Resources */,
 				31623E461CA5E40400695940 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
