@@ -26,12 +26,12 @@ class MemoryGame {
   // MARK: - Properties
   
   static var defaultCardImages:[UIImage] = [
-    UIImage(named: "cartridge1")!,
-    UIImage(named: "cartridge2")!,
-    UIImage(named: "cartridge3")!,
-    UIImage(named: "cartridge4")!,
-    UIImage(named: "cartridge5")!,
-    UIImage(named: "cartridge6")!
+    UIImage(named: "rose")!,
+    UIImage(named: "grape")!,
+    UIImage(named: "coffee")!,
+    UIImage(named: "shampoo")!,
+    UIImage(named: "spearmint")!,
+    UIImage(named: "tangerine")!
   ];
   
   var cards:[Card] = [Card]()
