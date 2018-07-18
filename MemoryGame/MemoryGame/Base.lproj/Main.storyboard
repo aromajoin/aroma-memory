@@ -35,13 +35,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mw3-xm-fN6" userLabel="play">
-                                <rect key="frame" x="22" y="49" width="65" height="30"/>
+                                <rect key="frame" x="22" y="49" width="82" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6TZ-mH-6qn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
                                 <state key="normal" title="PLAY">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="didPressPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q1c-sZ-wib"/>
