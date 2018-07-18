@@ -34,12 +34,28 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     resetGame()
   }
   
+  func setPlayButtonAnimation(animated: Bool) {
+    if animated {
+      UIView.animate(withDuration: 0.8, delay: 0, options: [.repeat, .allowUserInteraction], animations: {
+        self.playButton.transform = CGAffineTransform(rotationAngle: -.pi/4)
+      }, completion: { _ in
+        UIView.animate(withDuration: 0.8) {
+          self.playButton.transform = CGAffineTransform.identity
+        }
+      })
+    } else {
+      playButton.layer.removeAllAnimations()
+    }
+  }
+  
   override func viewWillAppear(_ animated: Bool) {
     if asController.connectedDevices.count == 0 {
       connectButton.setTitle("No connection", for: .normal)
     } else {
       connectButton.setTitle("Connected(\(asController.connectedDevices.count))", for: .normal)
     }
+    // Animation for 'Play' button
+    setPlayButtonAnimation(animated: true)
   }
   
   override func viewDidDisappear(_ animated: Bool) {
@@ -68,9 +84,11 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     if gameController.isPlaying {
       resetGame()
       playButton.setTitle(NSLocalizedString("PLAY", comment: "play"), for: .normal)
+      setPlayButtonAnimation(animated: true)
     } else {
       setupNewGame()
       playButton.setTitle(NSLocalizedString("STOP", comment: "stop"), for: .normal)
+      setPlayButtonAnimation(animated: false)
     }
   }
   
