@@ -189,13 +189,15 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     timer?.invalidate()
     
     let titleAttributed = NSMutableAttributedString(
-      string: "Congrats",
-      attributes: [NSAttributedStringKey.font:UIFont(name:"chalkduster",size: 22)]
+      string: "Congrats!",
+      attributes: [NSAttributedStringKey.font:UIFont(name:"chalkduster",size: 22),
+                   NSAttributedStringKey.foregroundColor:UIColor.black]
     )
     
     let messageAttributed = NSMutableAttributedString(
       string: String(format: "%@ %.0f seconds", NSLocalizedString("You finished the game in", comment: "message"), elapsedTime),
-      attributes: [NSAttributedStringKey.font:UIFont(name:"chalkduster",size: 17)]
+      attributes: [NSAttributedStringKey.font:UIFont(name:"chalkduster",size: 16),
+                   NSAttributedStringKey.foregroundColor:UIColor.orange]
     )
     
     let elapsedTime = gameController.elapsedTime
@@ -212,6 +214,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
       guard let name = nameTextField.text else { return }
       self?.savePlayerScore(name: name, score: elapsedTime)
       self?.resetGame()
+      self?.setPlayButtonAnimation(animated: true)
     }
     
     saveScoreAction.isEnabled = false
@@ -229,6 +232,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     let cancelAction = UIAlertAction(title: NSLocalizedString("Dismiss", comment: "dismiss"), style: .cancel) { [weak self] (action) in
       self?.resetGame()
+      self?.setPlayButtonAnimation(animated: true)
     }
     alertController.addAction(cancelAction)
     

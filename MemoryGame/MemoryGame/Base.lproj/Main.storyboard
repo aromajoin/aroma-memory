@@ -86,7 +86,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hexagon_green" translatesAutoresizingMaskIntoConstraints="NO" id="74i-74-n74">
                                                     <rect key="frame" x="10" y="10" width="60" height="60"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_11-128" translatesAutoresizingMaskIntoConstraints="NO" id="FsU-iU-TJz" userLabel="backImage">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question" translatesAutoresizingMaskIntoConstraints="NO" id="FsU-iU-TJz" userLabel="backImage">
                                                     <rect key="frame" x="10" y="10" width="60" height="60"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
@@ -374,11 +374,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1_11-128" width="126" height="128"/>
         <image name="bg_1" width="2282" height="2033"/>
         <image name="brand1" width="85" height="85"/>
         <image name="hexagon_green" width="300" height="334"/>
         <image name="ic_hexagon" width="28" height="30"/>
+        <image name="question" width="100" height="100"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
