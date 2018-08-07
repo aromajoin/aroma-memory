@@ -29,7 +29,7 @@ class MemoryGame {
     UIImage(named: "rose")!,
     UIImage(named: "grape")!,
     UIImage(named: "coffee")!,
-    UIImage(named: "shampoo")!,
+    UIImage(named: "sakura")!,
     UIImage(named: "spearmint")!,
     UIImage(named: "tangerine")!
   ];

@@ -83,7 +83,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hexagon_green" translatesAutoresizingMaskIntoConstraints="NO" id="74i-74-n74">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aj_icon" translatesAutoresizingMaskIntoConstraints="NO" id="74i-74-n74">
                                                     <rect key="frame" x="10" y="10" width="60" height="60"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question" translatesAutoresizingMaskIntoConstraints="NO" id="FsU-iU-TJz" userLabel="backImage">
@@ -374,9 +374,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="aj_icon" width="300" height="300"/>
         <image name="bg_1" width="2282" height="2033"/>
         <image name="brand1" width="85" height="85"/>
-        <image name="hexagon_green" width="300" height="334"/>
         <image name="ic_hexagon" width="28" height="30"/>
         <image name="question" width="100" height="100"/>
     </resources>
