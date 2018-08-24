@@ -160,14 +160,6 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(gameTimerAction), userInfo: nil, repeats: true)
   }
   
-  func memoryGame(game: MemoryGame, showTempCards cards: [Card]) {
-    for card in cards {
-      guard let index = gameController.indexForCard(card: card) else { continue }
-      let cell = collectionView.cellForItem(at: NSIndexPath(item: index, section:0) as IndexPath) as! CardCVC
-      cell.showCard(show: true, temp: true, animated: true)
-    }
-  }
-  
   func memoryGame(game: MemoryGame, showCards cards: [Card]) {
     for card in cards {
       guard let index = gameController.indexForCard(card: card) else { continue }

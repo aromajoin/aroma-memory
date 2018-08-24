@@ -13,7 +13,6 @@ import UIKit.UIImage
 
 protocol MemoryGameDelegate {
   func memoryGameDidStart(game: MemoryGame)
-  func memoryGame(game: MemoryGame, showTempCards cards: [Card])
   func memoryGame(game: MemoryGame, showCards cards: [Card])
   func memoryGame(game: MemoryGame, hideCards cards: [Card])
   func memoryGameDidEnd(game: MemoryGame, elapsedTime: TimeInterval)
@@ -72,8 +71,8 @@ class MemoryGame {
   func didSelectCard(card: Card?) {
     guard let card = card else { return }
     
-    delegate?.memoryGame(game: self, showTempCards: [card])
-    
+    delegate?.memoryGame(game: self, showCards: [card])
+
     if unpairedCardShown() {
       let unpaired = unpairedCard()!
       if card.equals(card: unpaired) {
