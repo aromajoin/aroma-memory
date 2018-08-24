@@ -112,7 +112,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return gameController.numberOfCards > 0 ? gameController.numberOfCards : 12
+    return gameController.numberOfCards > 0 ? gameController.numberOfCards : 6
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -146,7 +146,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     //let numberOfColumns:Int = self.collectionView(collectionView, numberOfItemsInSection: indexPath.section)
     
-    let itemWidth: CGFloat = collectionView.frame.width / 4.0 - 25.0 //numberOfColumns as CGFloat - 10 //- (minimumInteritemSpacing * numberOfColumns))
+    let itemWidth: CGFloat = collectionView.frame.width / 3.0 - 25.0 //numberOfColumns as CGFloat - 10 //- (minimumInteritemSpacing * numberOfColumns))
     
     return CGSize(width: itemWidth, height: itemWidth)
   }

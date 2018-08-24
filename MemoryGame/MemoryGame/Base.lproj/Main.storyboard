@@ -67,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0jR-Ru-IrD">
-                                <rect key="frame" x="60" y="78" width="547" height="277"/>
+                                <rect key="frame" x="60" y="98" width="547" height="257"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="P2p-ho-P7M">
                                     <size key="itemSize" width="80" height="80"/>
@@ -159,7 +159,7 @@
                             <constraint firstItem="bYq-fF-RPI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="3kU-OT-cUh"/>
                             <constraint firstItem="OfM-fS-roV" firstAttribute="centerY" secondItem="bYq-fF-RPI" secondAttribute="centerY" id="5bE-4F-2pL"/>
                             <constraint firstItem="mw3-xm-fN6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="6DJ-oK-B67"/>
-                            <constraint firstItem="0jR-Ru-IrD" firstAttribute="top" secondItem="PPK-H0-NFS" secondAttribute="bottom" id="8Ai-Z3-xC0"/>
+                            <constraint firstItem="0jR-Ru-IrD" firstAttribute="top" secondItem="PPK-H0-NFS" secondAttribute="bottom" constant="20" id="8Ai-Z3-xC0"/>
                             <constraint firstItem="0jR-Ru-IrD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="A7P-bJ-RJp"/>
                             <constraint firstItem="F2z-1U-7ru" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AMy-pX-Nh7"/>
                             <constraint firstItem="PPK-H0-NFS" firstAttribute="top" secondItem="bYq-fF-RPI" secondAttribute="bottom" id="CqQ-RM-QiO"/>
