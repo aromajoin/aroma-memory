@@ -81,7 +81,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
   }
   
   @IBAction func didPressPlayButton(_ sender: UIButton) {
-    if gameController.isPlaying {
+    if sender.titleLabel?.text == "STOP" {
       resetGame()
       playButton.setTitle(NSLocalizedString("PLAY", comment: "play"), for: .normal)
       setPlayButtonAnimation(animated: true)
@@ -179,6 +179,9 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
   
   func memoryGameDidEnd(game: MemoryGame, elapsedTime: TimeInterval) {
     timer?.invalidate()
+  }
+  
+  func showNameInputDialog(elapsedTime: TimeInterval) {
     
     let titleAttributed = NSMutableAttributedString(
       string: "Congrats!",

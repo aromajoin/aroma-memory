@@ -103,6 +103,10 @@ class MemoryGame {
   }
   
   func indexForCard(card: Card) -> Int? {
+    if (cards == nil || cards.count <= 0) {
+      return nil
+    }
+    
     for index in 0...cards.count-1 {
       if card === cards[index] {
         return index
