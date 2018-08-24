@@ -13,7 +13,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
   
   // MARK: Properties
   
-  let AROMA_DIFFUSE_DURATION = 2000
+  let AROMA_DIFFUSE_DURATION = 1500
   
   @IBOutlet weak var collectionView: UICollectionView!
   @IBOutlet weak var timerLabel: UILabel!
